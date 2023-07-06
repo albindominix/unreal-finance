@@ -1,10 +1,7 @@
-# Getting Started with Create React App
+Reference to https://app.compound.finance/markets?market=usdc-mainnet , the site connects to your 
+metamask wallet and obtains your address, fully responsive.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+![image](https://github.com/albindominix/unreal-finance/assets/84988103/b7a5b4e8-356c-44ec-aec8-d558b101bf59)
 
 ### `npm start`
 
