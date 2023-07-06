@@ -1,0 +1,13 @@
+.meter{
+    height: 4px;
+    background-color: #7A8A99;
+    border-radius:5px
+    
+}
+.meter-inner{
+    width:45%;
+    background-color: #00c289;
+    border-radius:5px
+
+}
+td, th {border-bottom: none !important;}

@@ -1,0 +1,125 @@
+import { createTheme } from "@mui/material/styles";
+
+
+export const shades = {
+    primary: {
+      100: "#cccccc",
+      200: "#999999",
+      300: "#666666",
+      400: "#333333",
+      500: "#000000",
+      600: "#000000",
+      700: "#000000",
+      800: "#000000",
+      900: "#000000",
+    },
+    secondary: {
+      100: "#f7ccd2",
+      200: "#ef99a4",
+      300: "#e66677",
+      400: "#de3349",
+      500: "#d6001c",
+      600: "#ab0016",
+      700: "#800011",
+      800: "#56000b",
+      900: "#2b0006",
+    },
+    neutral: {
+      100: "#f5f5f5",
+      200: "#ecebeb",
+      300: "#e2e1e1",
+      400: "#d9d7d7",
+      500: "#cfcdcd",
+      600: "#a6a4a4",
+      700: "#7c7b7b",
+      800: "#535252",
+      900: "#292929",
+    },
+  };
+export const theme = createTheme ({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1024,
+      xl: 1536,
+    },
+  },
+    palette: {
+      primary: {
+        main:"#0D131A",
+      },
+      secondary: {
+        main: shades.secondary[500],
+      },
+      neutral: {
+        dark: shades.neutral[700],
+        main: shades.neutral[500],
+        light: shades.neutral[100],
+      },
+    },
+    components: {
+      MuiContainer: {
+        styleOverrides: {
+          root: {
+            '@media (max-width:600px)': {
+              maxWidth: "100%",
+            },
+            '@media (min-width:600px) and (max-width:960px)': {
+              maxWidth: "100%",
+            },
+            '@media (min-width:960px)': {
+              maxWidth: 1200,
+            },
+          },
+        },
+      },
+    },
+    typography: {
+      fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+      fontSize: 11,
+      h1: {
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+        fontSize: '2rem',
+        fontWeight:600,
+        lineHeight:'3.25rem',
+
+      },
+      h2: {
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+
+        fontSize:'1.0625rem',
+        fontWeight: 600,
+        lineHeight: "1.25rem",
+      },
+
+      h3: {
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+
+        fontSize: 18,
+      },
+      h4: {
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+        color:"white",
+        fontSize: 16,
+      },
+      label:{
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+        fontSize: '0.815rem',
+        fontWeight:500,
+        lineHeight:'3.25rem'
+      },
+      subtitle1:{
+        color:'#7A8A99',
+
+      },
+      subtitle2:{
+        fontFamily: ["Space Grotesk", "sans-serif"].join(","),
+        fontSize: '0.815rem',
+        color:'#7A8A99',
+        fontWeight:500,
+        lineHeight:'1rem'
+      }
+    },
+  }); 

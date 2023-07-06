@@ -1,0 +1,6 @@
+.market-top{
+    padding: 3rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
